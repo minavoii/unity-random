@@ -1,0 +1,24 @@
+[package]
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+
+name = "unity-random"
+description = "A reimplementation of Unity's pseudo-random number generator."
+
+categories = ["algorithms"]
+keywords = ["unity", "random", "rng"]
+authors = ["Minavoii"]
+repository = "https://github.com/Minavoii/unity-random"
+documentation = "https://docs.rs/unity-random"
+readme = "README.md"
+
+[features]
+serde = ["serde_crate"]
+
+[dependencies.serde_crate]
+optional = true
+package = "serde" 
+version = "1.0.208"
+features = ["derive"]
+default-features = false
